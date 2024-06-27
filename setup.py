@@ -21,7 +21,7 @@ ext_modules = [Extension(
 )]
 
 setup(name='mudepy',
-      version='0.5.1',
+      version='0.5.2',
       description="mudepy is maintained nudepy. Nudity detection with Python. Port of nude.js to Python",
       long_description_content_type='text/markdown',
       long_description=open('README.md').read(),

@@ -61,7 +61,7 @@ class Nude(object):
                 wpercent = (maxwidth / float(self.width))
                 hsize = int((float(self.height) * float(wpercent)))
                 fname = self.image.filename
-                self.image = self.image.resize((maxwidth, hsize), Image.ANTIALIAS)
+                self.image = self.image.resize((maxwidth, hsize), Image.Resampling.LANCZOS)
                 self.image.filename = fname
                 self.width, self.height = self.image.size
                 self.total_pixels = self.width * self.height
@@ -71,7 +71,7 @@ class Nude(object):
                 hpercent = (maxheight / float(self.height))
                 wsize = int((float(self.width) * float(hpercent)))
                 fname = self.image.filename
-                self.image = self.image.resize((wsize, maxheight), Image.ANTIALIAS)
+                self.image = self.image.resize((wsize, maxheight), Image.Resampling.LANCZOS)
                 self.image.filename = fname
                 self.width, self.height = self.image.size
                 self.total_pixels = self.width * self.height
