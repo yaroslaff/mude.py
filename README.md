@@ -32,13 +32,13 @@ from pipx:
 ## Usage
 via command-line
 
-``` {.sh}
+```sh
 $ nudepy IMAGE_FILE
 ```
 
 via Python Module
 
-``` {.python}
+```python
 import nude
 from nude import Nude
 
