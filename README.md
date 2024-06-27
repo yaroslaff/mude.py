@@ -25,20 +25,11 @@ from pip:
 
     $ pip install --upgrade mudepy
 
-from easy\_install:
+from pipx:
 
-    $ easy_install -ZU mudepy
+    $ pipx install mudepy
 
-Requirements
-============
-
--   Python2.7+ and Python3.3+
--   Cython
--   Pillow
-
-Usage
-=====
-
+## Usage
 via command-line
 
 ``` {.sh}
@@ -60,11 +51,12 @@ print("damita :", n.result, n.inspect())
 
 see [examples](https://github.com/hhatto/nude.py/tree/master/examples) .
 
-Links
-=====
+## Links
 
--   [PyPI](http://pypi.python.org/pypi/nudepy/)
--   [GitHub](https://github.com/hhatto/nude.py)
+-   [mudepy PyPI](http://pypi.python.org/pypi/mudepy/)
+-   [mudepy GitHub](https://github.com/yaroslaff/mude.py)
+-   [nudepy PyPI](http://pypi.python.org/pypi/nudepy/)
+-   [nudepy GitHub](https://github.com/hhatto/nude.py)
 
 ### How to build binary wheel
 Start manylinux docker container
@@ -75,5 +67,4 @@ inside container:
 ~~~
 cd io
 ./makeanylinux.sh
-cd a
 ~~~
