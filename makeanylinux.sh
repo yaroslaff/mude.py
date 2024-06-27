@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd /io
 echo build anylinux version
 PYTHON=/opt/python/cp38-cp38/bin/python
 echo PYTHON=$PYTHON

@@ -59,12 +59,7 @@ see [examples](https://github.com/hhatto/nude.py/tree/master/examples) .
 -   [nudepy GitHub](https://github.com/hhatto/nude.py)
 
 ### How to build binary wheel
-Start manylinux docker container
+Build with manylinux docker container
 ~~~
-docker run -it -v `pwd`:/io quay.io/pypa/manylinux2014_x86_64 /bin/bash
-~~~
-inside container:
-~~~
-cd io
-./makeanylinux.sh
+docker run -it -v `pwd`:/io quay.io/pypa/manylinux2014_x86_64 io/makeanylinux.sh
 ~~~
